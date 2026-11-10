@@ -1,0 +1,76 @@
+ScholarMind AI - backend tests (pytest)
+Date: 2026-11-07 08:04:55 PKT
+Python: Python 3.13.18 | Node: v22.23.4 | OS: Linux 6.18.44-fc-v300
+Embedder in tests: hashing-384 (lexical fallback, NOT semantic) | LLM in tests: scripted MOCK (not a real model)
+Directory: /home/claude/ScholarMind-AI
+------------------------------------------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3
+rootdir: /home/claude/ScholarMind-AI
+plugins: platformdirs-4.13.5, anyio-4.15.1, langsmith-0.14.17
+collecting ... collected 62 items
+
+backend/tests/test_agent.py::test_intent_classification[Summarize my Machine Learning notes-summarize] PASSED [  1%]
+backend/tests/test_agent.py::test_intent_classification[Compare supervised and unsupervised learning from my uploaded notes-compare] PASSED [  3%]
+backend/tests/test_agent.py::test_intent_classification[What is the difference between these two research papers?-compare] PASSED [  4%]
+backend/tests/test_agent.py::test_intent_classification[Create 10 MCQs from Chapter 2-quiz] PASSED [  6%]
+backend/tests/test_agent.py::test_intent_classification[Make flashcards for chapter 1-flashcards] PASSED [  8%]
+backend/tests/test_agent.py::test_intent_classification[Generate study notes on clustering-notes] PASSED [  9%]
+backend/tests/test_agent.py::test_intent_classification[Create a 7-day study plan for my exam-study_plan] PASSED [ 11%]
+backend/tests/test_agent.py::test_intent_classification[Find where overfitting is mentioned-document_search] PASSED [ 12%]
+backend/tests/test_agent.py::test_intent_classification[Do a literature review on clustering-research] PASSED [ 14%]
+backend/tests/test_agent.py::test_intent_classification[What is overfitting?-document_qa] PASSED [ 16%]
+backend/tests/test_agent.py::test_intent_classification[hello-chitchat] PASSED [ 17%]
+backend/tests/test_agent.py::test_verify_missing_needs_history PASSED    [ 19%]
+backend/tests/test_agent.py::test_tools_endpoint_lists_nine PASSED       [ 20%]
+backend/tests/test_agent.py::test_qa_end_to_end_with_trace_and_citations PASSED [ 22%]
+backend/tests/test_agent.py::test_followup_uses_conversation_context PASSED [ 24%]
+backend/tests/test_agent.py::test_conversations_do_not_leak PASSED       [ 25%]
+backend/tests/test_agent.py::test_summarize_covers_whole_document PASSED [ 27%]
+backend/tests/test_agent.py::test_compare_two_documents_retrieves_from_both PASSED [ 29%]
+backend/tests/test_agent.py::test_quiz_count_and_invalid_items_dropped PASSED [ 30%]
+backend/tests/test_agent.py::test_study_endpoints PASSED                 [ 32%]
+backend/tests/test_agent.py::test_document_search_tool_needs_no_llm PASSED [ 33%]
+backend/tests/test_agent.py::test_insufficient_evidence_does_not_call_llm PASSED [ 35%]
+backend/tests/test_agent.py::test_chitchat_does_not_call_llm PASSED      [ 37%]
+backend/tests/test_agent.py::test_verify_missing_flow PASSED             [ 38%]
+backend/tests/test_agent.py::test_tool_failure_retries_then_fails_gracefully PASSED [ 40%]
+backend/tests/test_agent.py::test_iteration_limit PASSED                 [ 41%]
+backend/tests/test_agent.py::test_llm_down_returns_503 PASSED            [ 43%]
+backend/tests/test_agent.py::test_prompt_injection_in_document_is_neutralised PASSED [ 45%]
+backend/tests/test_agent.py::test_delete_conversation_and_404 PASSED     [ 46%]
+backend/tests/test_agent.py::test_conversations_persist_across_restart PASSED [ 48%]
+backend/tests/test_analytics.py::test_overview_empty_then_real_counts PASSED [ 50%]
+backend/tests/test_analytics.py::test_usage_counts_tools_and_today PASSED [ 51%]
+backend/tests/test_analytics.py::test_documents_analytics PASSED         [ 53%]
+backend/tests/test_analytics.py::test_research_compare_validation_and_clear PASSED [ 54%]
+backend/tests/test_api.py::test_health PASSED                            [ 56%]
+backend/tests/test_api.py::test_upload_pdf_indexes_and_lists PASSED      [ 58%]
+backend/tests/test_api.py::test_invalid_extension_rejected PASSED        [ 59%]
+backend/tests/test_api.py::test_fake_pdf_marked_failed_not_searchable PASSED [ 61%]
+backend/tests/test_api.py::test_path_traversal_filename_sanitised PASSED [ 62%]
+backend/tests/test_api.py::test_oversize_rejected PASSED                 [ 64%]
+backend/tests/test_api.py::test_duplicate_upload_rejected PASSED         [ 66%]
+backend/tests/test_api.py::test_search_returns_correct_page PASSED       [ 67%]
+backend/tests/test_api.py::test_document_filter PASSED                   [ 69%]
+backend/tests/test_api.py::test_query_answered_with_valid_citations PASSED [ 70%]
+backend/tests/test_api.py::test_insufficient_evidence_skips_llm PASSED   [ 72%]
+backend/tests/test_api.py::test_llm_unavailable_gives_503 PASSED         [ 74%]
+backend/tests/test_api.py::test_delete_removes_metadata_vectors_and_file PASSED [ 75%]
+backend/tests/test_api.py::test_reindex PASSED                           [ 77%]
+backend/tests/test_api.py::test_persistence_across_restart PASSED        [ 79%]
+backend/tests/test_config.py::test_dotenv_parsed_comments_stripped_and_env_wins PASSED [ 80%]
+backend/tests/test_config.py::test_missing_dotenv_is_fine PASSED         [ 82%]
+backend/tests/test_pipeline.py::test_pdf_extraction_keeps_page_numbers PASSED [ 83%]
+backend/tests/test_pipeline.py::test_docx_extraction_keeps_headings PASSED [ 85%]
+backend/tests/test_pipeline.py::test_markdown_headings PASSED            [ 87%]
+backend/tests/test_pipeline.py::test_fake_pdf_rejected PASSED            [ 88%]
+backend/tests/test_pipeline.py::test_clean_text_rejoins_hyphenation PASSED [ 90%]
+backend/tests/test_pipeline.py::test_chunker_size_overlap_and_metadata PASSED [ 91%]
+backend/tests/test_pipeline.py::test_chunker_rejects_bad_overlap PASSED  [ 93%]
+backend/tests/test_pipeline.py::test_chunker_drops_exact_duplicates PASSED [ 95%]
+backend/tests/test_pipeline.py::test_embedder_deterministic_normalised PASSED [ 96%]
+backend/tests/test_pipeline.py::test_vector_store_insert_query_delete PASSED [ 98%]
+backend/tests/test_pipeline.py::test_context_budget_and_injection_flag PASSED [100%]
+
+============================== 62 passed in 2.88s ==============================

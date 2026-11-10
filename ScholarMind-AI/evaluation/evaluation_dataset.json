@@ -1,0 +1,21 @@
+{
+  "description": "Hand-written questions over the sample corpus in sample_data/. 'expected' marks the single page (PDF) or section (Markdown) that contains the answer; each was checked against the document text by the author. 'keywords' are facts a correct answer should contain. Questions with expected=null are out of scope: a correct system must report insufficient evidence.",
+  "questions": [
+    {"id": "Q01", "question": "What is the difference between classification and regression?", "expected": {"document": "ml_fundamentals.pdf", "page": 1}, "keywords": ["category", "continuous"]},
+    {"id": "Q02", "question": "What is overfitting?", "expected": {"document": "ml_fundamentals.pdf", "page": 1}, "keywords": ["noise", "training"]},
+    {"id": "Q03", "question": "How does K-means assign points to clusters?", "expected": {"document": "ml_fundamentals.pdf", "page": 2}, "keywords": ["nearest", "centroid"]},
+    {"id": "Q04", "question": "What does principal component analysis do?", "expected": {"document": "ml_fundamentals.pdf", "page": 2}, "keywords": ["variance"]},
+    {"id": "Q05", "question": "Why can accuracy be misleading for a classifier?", "expected": {"document": "ml_fundamentals.pdf", "page": 3}, "keywords": ["imbalanced"]},
+    {"id": "Q06", "question": "How does cross-validation estimate generalisation?", "expected": {"document": "ml_fundamentals.pdf", "page": 3}, "keywords": ["folds"]},
+    {"id": "Q07", "question": "What is the difference between L1 and L2 regularization?", "expected": {"document": "ml_fundamentals.pdf", "page": 4}, "keywords": ["absolute", "squared"]},
+    {"id": "Q08", "question": "Why do neural networks need non-linear activation functions?", "expected": {"document": "neural_networks.pdf", "page": 1}, "keywords": ["linear"]},
+    {"id": "Q09", "question": "How does backpropagation compute gradients?", "expected": {"document": "neural_networks.pdf", "page": 2}, "keywords": ["chain rule"]},
+    {"id": "Q10", "question": "What happens if the learning rate is too large?", "expected": {"document": "neural_networks.pdf", "page": 2}, "keywords": ["diverge"]},
+    {"id": "Q11", "question": "What do convolutional networks use to process images?", "expected": {"document": "neural_networks.pdf", "page": 3}, "keywords": ["filters"]},
+    {"id": "Q12", "question": "Why do plain RNNs struggle with long sequences?", "expected": {"document": "neural_networks.pdf", "page": 3}, "keywords": ["gradient"]},
+    {"id": "Q13", "question": "What is chunk overlap used for in a RAG system?", "expected": {"document": "rag_systems.md", "section": "Chunking"}, "keywords": ["boundary"]},
+    {"id": "Q14", "question": "What should an agentic RAG system do when no relevant evidence is found?", "expected": {"document": "rag_systems.md", "section": "Agentic RAG"}, "keywords": ["say"]},
+    {"id": "Q15", "question": "Who won the 1966 football World Cup final?", "expected": null, "keywords": []},
+    {"id": "Q16", "question": "What is the boiling point of tungsten?", "expected": null, "keywords": []}
+  ]
+}

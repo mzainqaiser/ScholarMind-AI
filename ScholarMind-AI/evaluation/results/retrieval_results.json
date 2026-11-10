@@ -1,0 +1,334 @@
+{
+  "timestamp": "2026-11-10 16:26:31",
+  "embedder": "all-MiniLM-L6-v2",
+  "semantic_embedder": true,
+  "chunk_size": 800,
+  "chunk_overlap": 120,
+  "min_score_threshold": 0.12,
+  "in_scope_questions": 14,
+  "out_of_scope_questions": 2,
+  "false_refusal_ids": [],
+  "summary": {
+    "precision@1": 0.929,
+    "recall@1": 0.929,
+    "precision@3": 0.333,
+    "recall@3": 1.0,
+    "precision@5": 0.2,
+    "recall@5": 1.0,
+    "MRR": 0.952,
+    "false_refusal_rate": 0.0,
+    "out_of_scope_correctly_refused": "2/2"
+  },
+  "per_question": [
+    {
+      "id": "Q01",
+      "question": "What is the difference between classification and regression?",
+      "expected": "ml_fundamentals.pdf 1",
+      "first_relevant_rank": 1,
+      "top_score": 0.4312,
+      "retrieved": [
+        "ml_fundamentals.pdf 1 (0.43)",
+        "ml_fundamentals.pdf 3 (0.36)",
+        "ml_fundamentals.pdf 4 (0.32)",
+        "neural_networks.pdf 1 (0.22)",
+        "ml_fundamentals.pdf 2 (0.21)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q02",
+      "question": "What is overfitting?",
+      "expected": "ml_fundamentals.pdf 1",
+      "first_relevant_rank": 1,
+      "top_score": 0.5637,
+      "retrieved": [
+        "ml_fundamentals.pdf 1 (0.56)",
+        "ml_fundamentals.pdf 4 (0.45)",
+        "neural_networks.pdf 2 (0.30)",
+        "ml_fundamentals.pdf 3 (0.29)",
+        "neural_networks.pdf 1 (0.18)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q03",
+      "question": "How does K-means assign points to clusters?",
+      "expected": "ml_fundamentals.pdf 2",
+      "first_relevant_rank": 1,
+      "top_score": 0.5471,
+      "retrieved": [
+        "ml_fundamentals.pdf 2 (0.55)",
+        "rag_systems.md Embeddings and vector databases (0.19)",
+        "rag_systems.md Chunking (0.13)",
+        "ml_fundamentals.pdf 3 (0.13)",
+        "ml_fundamentals.pdf 4 (0.11)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q04",
+      "question": "What does principal component analysis do?",
+      "expected": "ml_fundamentals.pdf 2",
+      "first_relevant_rank": 1,
+      "top_score": 0.5052,
+      "retrieved": [
+        "ml_fundamentals.pdf 2 (0.51)",
+        "rag_systems.md Embeddings and vector databases (0.34)",
+        "ml_fundamentals.pdf 4 (0.25)",
+        "rag_systems.md Retrieval-Augmented Generation (0.18)",
+        "neural_networks.pdf 2 (0.18)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q05",
+      "question": "Why can accuracy be misleading for a classifier?",
+      "expected": "ml_fundamentals.pdf 3",
+      "first_relevant_rank": 1,
+      "top_score": 0.5405,
+      "retrieved": [
+        "ml_fundamentals.pdf 3 (0.54)",
+        "ml_fundamentals.pdf 1 (0.38)",
+        "ml_fundamentals.pdf 4 (0.21)",
+        "ml_fundamentals.pdf 2 (0.19)",
+        "neural_networks.pdf 2 (0.19)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q06",
+      "question": "How does cross-validation estimate generalisation?",
+      "expected": "ml_fundamentals.pdf 3",
+      "first_relevant_rank": 1,
+      "top_score": 0.4502,
+      "retrieved": [
+        "ml_fundamentals.pdf 3 (0.45)",
+        "ml_fundamentals.pdf 4 (0.28)",
+        "ml_fundamentals.pdf 1 (0.26)",
+        "ml_fundamentals.pdf 2 (0.24)",
+        "rag_systems.md Why RAG is used (0.23)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q07",
+      "question": "What is the difference between L1 and L2 regularization?",
+      "expected": "ml_fundamentals.pdf 4",
+      "first_relevant_rank": 1,
+      "top_score": 0.6411,
+      "retrieved": [
+        "ml_fundamentals.pdf 4 (0.64)",
+        "neural_networks.pdf 2 (0.25)",
+        "neural_networks.pdf 1 (0.25)",
+        "ml_fundamentals.pdf 1 (0.21)",
+        "neural_networks.pdf 3 (0.19)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q08",
+      "question": "Why do neural networks need non-linear activation functions?",
+      "expected": "neural_networks.pdf 1",
+      "first_relevant_rank": 1,
+      "top_score": 0.6551,
+      "retrieved": [
+        "neural_networks.pdf 1 (0.66)",
+        "neural_networks.pdf 2 (0.42)",
+        "neural_networks.pdf 3 (0.32)",
+        "ml_fundamentals.pdf 1 (0.22)",
+        "ml_fundamentals.pdf 4 (0.17)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q09",
+      "question": "How does backpropagation compute gradients?",
+      "expected": "neural_networks.pdf 2",
+      "first_relevant_rank": 1,
+      "top_score": 0.6751,
+      "retrieved": [
+        "neural_networks.pdf 2 (0.68)",
+        "neural_networks.pdf 1 (0.40)",
+        "neural_networks.pdf 3 (0.27)",
+        "ml_fundamentals.pdf 1 (0.25)",
+        "ml_fundamentals.pdf 4 (0.22)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q10",
+      "question": "What happens if the learning rate is too large?",
+      "expected": "neural_networks.pdf 2",
+      "first_relevant_rank": 1,
+      "top_score": 0.4322,
+      "retrieved": [
+        "neural_networks.pdf 2 (0.43)",
+        "ml_fundamentals.pdf 1 (0.39)",
+        "ml_fundamentals.pdf 3 (0.27)",
+        "ml_fundamentals.pdf 4 (0.26)",
+        "neural_networks.pdf 1 (0.20)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q11",
+      "question": "What do convolutional networks use to process images?",
+      "expected": "neural_networks.pdf 3",
+      "first_relevant_rank": 1,
+      "top_score": 0.5416,
+      "retrieved": [
+        "neural_networks.pdf 3 (0.54)",
+        "neural_networks.pdf 1 (0.43)",
+        "neural_networks.pdf 2 (0.43)",
+        "ml_fundamentals.pdf 4 (0.22)",
+        "ml_fundamentals.pdf 1 (0.20)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q12",
+      "question": "Why do plain RNNs struggle with long sequences?",
+      "expected": "neural_networks.pdf 3",
+      "first_relevant_rank": 1,
+      "top_score": 0.5249,
+      "retrieved": [
+        "neural_networks.pdf 3 (0.52)",
+        "neural_networks.pdf 2 (0.28)",
+        "rag_systems.md Chunking (0.26)",
+        "rag_systems.md Why RAG is used (0.21)",
+        "rag_systems.md Agentic RAG (0.20)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    },
+    {
+      "id": "Q13",
+      "question": "What is chunk overlap used for in a RAG system?",
+      "expected": "rag_systems.md Chunking",
+      "first_relevant_rank": 3,
+      "top_score": 0.3973,
+      "retrieved": [
+        "rag_systems.md Why RAG is used (0.40)",
+        "rag_systems.md Retrieval-Augmented Generation (0.39)",
+        "rag_systems.md Chunking (0.36)",
+        "rag_systems.md Agentic RAG (0.26)",
+        "ml_fundamentals.pdf 3 (0.11)"
+      ],
+      "precision@1": 0.0,
+      "recall@1": 0.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 0.3333333333333333
+    },
+    {
+      "id": "Q14",
+      "question": "What should an agentic RAG system do when no relevant evidence is found?",
+      "expected": "rag_systems.md Agentic RAG",
+      "first_relevant_rank": 1,
+      "top_score": 0.5727,
+      "retrieved": [
+        "rag_systems.md Agentic RAG (0.57)",
+        "rag_systems.md Why RAG is used (0.56)",
+        "rag_systems.md Retrieval-Augmented Generation (0.31)",
+        "rag_systems.md Chunking (0.10)",
+        "ml_fundamentals.pdf 3 (0.07)"
+      ],
+      "precision@1": 1.0,
+      "recall@1": 1.0,
+      "precision@3": 0.3333333333333333,
+      "recall@3": 1.0,
+      "precision@5": 0.2,
+      "recall@5": 1.0,
+      "rr": 1.0
+    }
+  ],
+  "out_of_scope": [
+    {
+      "id": "Q15",
+      "question": "Who won the 1966 football World Cup final?",
+      "top_score": 0.0972,
+      "passes_threshold": false,
+      "top_source": "ml_fundamentals.pdf p.1"
+    },
+    {
+      "id": "Q16",
+      "question": "What is the boiling point of tungsten?",
+      "top_score": 0.0864,
+      "passes_threshold": false,
+      "top_source": "ml_fundamentals.pdf p.1"
+    }
+  ]
+}

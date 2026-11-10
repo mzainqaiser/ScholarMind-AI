@@ -1,0 +1,33 @@
+ScholarMind AI - retrieval evaluation
+Date: 2026-11-07 08:05:07 PKT
+Python: Python 3.13.18 | Node: v22.23.4 | OS: Linux 6.18.44-fc-v300
+Embedder in tests: hashing-384 (lexical fallback, NOT semantic) | LLM in tests: scripted MOCK (not a real model)
+Directory: /home/claude/ScholarMind-AI
+------------------------------------------------------------
+Embedder: hashing-384 (semantic=False) | 14 in-scope, 2 out-of-scope questions
+  precision@1    0.5
+  recall@1       0.5
+  precision@3    0.31
+  recall@3       0.929
+  precision@5    0.186
+  recall@5       0.929
+  MRR            0.687
+  false_refusal_rate 0.286
+  out_of_scope_correctly_refused 2/2
+  Q01 rank=3 top=0.12  What is the difference between classification and regression?
+  Q02 rank=3 top=0.13  What is overfitting?
+  Q03 rank=1 top=0.16  How does K-means assign points to clusters?
+  Q04 rank=2 top=0.12  What does principal component analysis do?
+  Q05 rank=2 top=0.13  Why can accuracy be misleading for a classifier?
+  Q06 rank=3 top=0.09  How does cross-validation estimate generalisation?
+  Q07 rank=1 top=0.09  What is the difference between L1 and L2 regularization?
+  Q08 rank=1 top=0.25  Why do neural networks need non-linear activation functions?
+  Q09 rank=2 top=0.10  How does backpropagation compute gradients?
+  Q10 rank=1 top=0.21  What happens if the learning rate is too large?
+  Q11 rank=1 top=0.16  What do convolutional networks use to process images?
+  Q12 rank=1 top=0.29  Why do plain RNNs struggle with long sequences?
+  Q13 rank=9 top=0.15  What is chunk overlap used for in a RAG system?
+  Q14 rank=1 top=0.41  What should an agentic RAG system do when no relevant evidence is found?
+  In-scope questions the agent would WRONGLY refuse at threshold 0.12: ['Q04', 'Q06', 'Q07', 'Q09']
+  Q15 OUT-OF-SCOPE top_score=0.06 -> correctly below threshold 0.12
+  Q16 OUT-OF-SCOPE top_score=0.08 -> correctly below threshold 0.12

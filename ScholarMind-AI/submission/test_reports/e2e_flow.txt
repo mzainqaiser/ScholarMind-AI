@@ -1,0 +1,35 @@
+ScholarMind AI - end-to-end (real backend + Vite proxy, HTTP level, restart in the middle)
+Date: 2026-11-07 08:05:12 PKT
+Python: Python 3.13.18 | Node: v22.23.4 | OS: Linux 6.18.44-fc-v300
+Embedder in tests: hashing-384 (lexical fallback, NOT semantic) | LLM in tests: scripted MOCK (not a real model)
+Directory: /home/claude/ScholarMind-AI
+------------------------------------------------------------
+=== PHASE 1: fresh backend ===
+PASS  frontend serves the app shell 
+PASS  backend reachable through frontend proxy 
+PASS  PDF uploaded, processed and indexed (chunks=3)
+PASS  document appears in library 
+PASS  invalid file rejected with readable error 
+PASS  retrieval returns the correct page (page=2, score=0.376)
+PASS  agent answers with tool + valid citation 
+PASS  agent trace present 
+PASS  follow-up keeps conversation 
+PASS  study/notes generated (tool=notes)
+PASS  study/quiz generated (tool=quiz)
+PASS  study/flashcards generated (tool=flashcards)
+PASS  study/plan generated (tool=study_plan)
+PASS  chitchat handled without LLM 
+PASS  empty-evidence question reports insufficient evidence 
+PASS  analytics reflects real usage 
+
+16/16 checks passed
+
+=== PHASE 2: backend restarted, same storage ===
+PASS  document survived backend restart 
+PASS  conversation survived backend restart 
+PASS  vector search works after restart 
+PASS  delete succeeds 
+PASS  delete removed metadata AND vectors 
+PASS  deleted document no longer retrievable 
+
+6/6 checks passed

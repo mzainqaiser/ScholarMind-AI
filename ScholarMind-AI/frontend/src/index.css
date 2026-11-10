@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+.prose-sm-custom { font-size: 0.925rem; line-height: 1.6; }
+.prose-sm-custom h1, .prose-sm-custom h2, .prose-sm-custom h3 { font-weight: 600; margin: 1rem 0 .4rem; }
+.prose-sm-custom h2 { font-size: 1.05rem; } .prose-sm-custom h3 { font-size: .98rem; }
+.prose-sm-custom ul { list-style: disc; padding-left: 1.25rem; margin: .4rem 0; }
+.prose-sm-custom ol { list-style: decimal; padding-left: 1.25rem; margin: .4rem 0; }
+.prose-sm-custom p { margin: .45rem 0; }
+.prose-sm-custom table { border-collapse: collapse; font-size: .85rem; }
+.prose-sm-custom th, .prose-sm-custom td { border: 1px solid #e2e8f0; padding: .4rem .6rem; text-align: left; vertical-align: top; }
+.prose-sm-custom th { background: #f8fafc; }
+.prose-sm-custom blockquote { border-left: 3px solid #c7d2fe; padding-left: .75rem; color: #475569; margin: .5rem 0; }
+.prose-sm-custom code { background: #f1f5f9; border-radius: 4px; padding: .1rem .3rem; font-size: .85em; }
+.prose-sm-custom pre { background: #0f172a; color: #e2e8f0; padding: .75rem; border-radius: .5rem; overflow-x: auto; }
+.prose-sm-custom pre code { background: transparent; padding: 0; color: inherit; }
